@@ -1,0 +1,473 @@
+.hover1 {
+  background: linear-gradient(to right, #3D154B, #DF3542, #FFD29C);
+  color: #fff;
+  padding: 10px 30px;
+  border: 2px solid #DF3542;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-family: Rosario;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 16px;
+  line-height: 100%;
+  text-transform: capitalize;
+
+}
+
+.hover1:hover {
+  background: linear-gradient(to right, #FFD29C, #DF3542, #3D154B);
+  color: #fff;
+}
+
+.hover2 {
+  font-family: Rosario;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 1rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  padding: 1rem 3rem;
+  background: #000;
+  color: #fff;
+  border-radius: 3rem;
+}
+
+.hover2:hover {
+  background: #fff;
+  color: #000;
+
+}
+
+.hover3 {
+  font-family: Rosario;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 1rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  padding: 1rem 3rem;
+  background: #fff;
+  color: #16001E;
+  border-radius: 3rem;
+}
+
+.hover3:hover {
+  background: #16001E;
+  color: #fff;
+
+}
+
+/* =================================
+   MAIN SECTION
+================================= */
+
+.expertise-section {
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+/* =================================
+   LEFT SIDE
+================================= */
+
+.left-design {
+  position: relative;
+  min-height: 530px;
+}
+
+
+/* =================================
+   MAIN IMAGE
+================================= */
+
+.main-image-wrapper {
+  position: absolute;
+  top: 166px;
+  left: 0;
+  width: 100%;
+  height: 65%;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* =================================
+   RED SPEND CARD
+================================= */
+
+.spend-card {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 160px;
+
+  background: #e82e42;
+
+  border-radius: 0 0 22px 0;
+
+  z-index: 5;
+
+  display: flex;
+  align-items: center;
+
+  padding: 12px;
+}
+
+
+/* Spend text */
+
+.spend-title {
+  color: white;
+
+  font-size: 20px;
+  font-weight: 400;
+
+  line-height: 1.2;
+
+  width: 100px;
+}
+
+
+/* =================================
+   CHART
+================================= */
+
+.chart-area {
+  flex: 1;
+  height: 115px;
+
+  position: relative;
+}
+
+
+.chart-bars {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+
+  gap: 7px;
+}
+
+
+.bar-wrapper {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-end;
+  align-items: center;
+
+  position: relative;
+}
+
+
+.chart-bar {
+  width: 20px;
+
+  min-height: 15px;
+
+  background: #ffffff;
+
+  border-radius: 3px 3px 0 0;
+
+  transition: height 0.5s ease;
+}
+
+
+/* December bar */
+
+.active-bar {
+  background: #27002f;
+}
+
+
+/* Amount */
+
+.amount {
+  position: absolute;
+
+  top: -18px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  color: white;
+
+  font-size: 7px;
+
+  white-space: nowrap;
+}
+
+
+/* Month */
+
+.month {
+  color: white;
+
+  font-size: 7px;
+
+  margin-top: 5px;
+}
+
+
+/* =================================
+   RIGHT SIDE
+================================= */
+
+.right-design {
+  position: relative;
+
+  min-height: 530px;
+}
+
+
+/* =================================
+   TOP IMAGE
+================================= */
+
+.top-image-wrapper {
+  position: absolute;
+
+  top: 0;
+  right: 14px;
+
+  width: 100%;
+  height: 277px;
+
+  overflow: hidden;
+
+  border-radius: 0 0 0 25px;
+}
+
+
+.top-image {
+  width: 100%;
+  height: 88%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+
+/* =================================
+   STATS CARD
+================================= */
+
+.stats-card {
+  position: absolute;
+
+  right: 14px;
+
+  top: 250px;
+
+  width: 100%;
+
+  min-height: 280px;
+
+  background: #26002d;
+
+  border-radius: 16px 0 0 16px;
+
+  z-index: 10;
+
+  color: white;
+
+  padding: 35px 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-around;
+
+  text-align: center;
+}
+
+
+/* =================================
+   STAT ITEM
+================================= */
+
+.stat-item h2 {
+  margin: 0;
+
+  font-size: 40px;
+
+  font-weight: 400;
+
+  line-height: 1;
+}
+
+
+.stat-item p {
+  margin: 10px 0 0;
+
+  font-size: 17px;
+
+  line-height: 1.2;
+
+  font-weight: 400;
+}
+
+.HeroSection .stats-card p {
+  color: #fff;
+}
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 991px) {
+  .navbar-center {
+    flex: 1 1;
+  }
+
+  .hover1 {
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+
+  .hover2 {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .hover3 {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .left-design {
+    min-height: 500px;
+  }
+
+  .right-design {
+    min-height: 500px;
+  }
+
+  .top-image {
+    height: 53%;
+    object-fit: fill;
+  }
+
+  .top-image-wrapper {
+    height: 260px;
+  }
+
+  .spend-card {
+    height: 124px;
+  }
+
+  .stats-card {
+    top: 160px;
+    justify-content: space-evenly;
+  }
+
+  .main-image {
+    height: 90%;
+    object-fit: fill;
+  }
+
+  .main-image-wrapper {
+    top: 140px
+  }
+
+  .stat-item h2 {
+    font-size: 24px;
+  }
+
+  .HeroSection .stats-card .stat-item p {
+    font-size: 11px;
+
+  }
+}
+
+
+
+/* =================================
+   MOBILE
+================================= */
+
+
+@media (max-width: 767px) {
+
+  .left-design,
+  .right-design {
+    min-height: 168px;
+  }
+
+  .left-design {
+    display: flex;
+    gap: 12px;
+  }
+  .right-design {
+    display: flex;
+    gap: 12px;
+  }
+  .spend-title {
+    width:70px;
+  }
+  .spend-card {
+    position: relative;
+
+    width: 75%;
+
+    height: 120px;
+
+    border-radius: 0 0 20px 20px;
+  }
+  .col-md-7 {
+  height:138px;
+ }
+  .main-image-wrapper {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 130px
+  }
+
+
+  .top-image-wrapper {
+    position: relative;
+
+    width: 100%;
+
+    right: 0;
+
+    border-radius: 0;
+  }
+
+  .top-image {
+    height: 100%
+  }
+ 
+  .stats-card {
+    position: relative;
+   padding :10px 20px;
+    top: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 0;
+
+  }
+
+}
