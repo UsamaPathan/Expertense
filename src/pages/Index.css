@@ -1,8 +1,9 @@
-.HeroSection {
-  padding: 4rem 0;
+/* Global styling */
+body {
+    margin: 0;
+    font-family: Rosario;
 }
-
-.HeroSection h1 {
+ h1 {
   font-family: Rosario;
   font-weight: 700;
   font-style: Bold;
@@ -11,6 +12,56 @@
   letter-spacing: 0%;
   text-transform: capitalize;
 }
+
+h2 {
+  font-family: Rosario;
+font-weight: 700;
+font-style: Bold;
+font-size: 40px;
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+h4 {
+  font-family: Rosario;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 0%;
+text-transform: capitalize;
+color: #16001E;
+}
+h5 {
+font-family: Rosario;
+font-weight: 500;
+font-style: Medium;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0%;
+text-transform: capitalize;
+color: #16001E;
+}
+h6 {
+  font-family: Rosario;
+font-weight: 400;
+font-style: Regular;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: 0%;
+text-transform: capitalize;
+color: #DF3542;
+}
+
+
+/* global End */
+
+/* Hero Section */
+.HeroSection {
+  padding: 4rem 0;
+}
+
+
 
 .HeroSection .d-flex .align-items-lg-center span {
   background: linear-gradient(to right, #3D154B, #DF3542, #FFD29C);
@@ -117,11 +168,77 @@
   letter-spacing: 0.15rem;
   line-height: 1;
 }
+/* Speciality Section */
+.SpecialitySection {
+  padding: 4rem 0;
+}
+.SpecialitySection figure, .SpecialitySection img  {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.SpecialitySection .service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+}
 
+.SpecialitySection .service-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.SpecialitySection .service-list .number {
+  width: 18px !important;
+  height: 18px !important;
+  min-width: 18px !important;
+
+  background-color: #DF3542 !important;
+  color: #fff !important;
+
+  border-radius: 50% !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+.SpecialitySection .align-items-lg-start span {
+   background: linear-gradient(to right, #3D154B, #DF3542, #FFD29C);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.SpecialitySection .align-items-lg-start {
+  width: 74%;
+}
+.SpecialitySection .align-items-lg-start figure, .SpecialitySection .align-items-lg-start img {
+  width: 75%;
+  
+}
+.SpecialitySection .position-relative .position-absolute {
+  border-radius: 10px;
+  border: solid #4444441A;
+  top: 30%;
+  left: 50%;
+  width: 40%;
+
+}
+
+
+/* esponsiveness */
 @media only screen and (max-width:1400px){
   .HeroSection h1 {
     font-size: 3.5rem;
   }
+  .SpecialitySection .align-items-lg-start {
+  width: 88%;
+}
 }
 @media only screen and (max-width:1200px){
   .HeroSection h1 {
@@ -130,18 +247,35 @@
   .review-copy h3 {
     font-size: 1.8rem;
   }
+  .SpecialitySection .align-items-lg-start {
+  width: 100%;
+}
 }
 @media (max-width: 991.98px) {
-  .HeroSection {
-    padding: 1rem 0;
-  }
-
-  .HeroSection h1 {
+    h1 {
     font-size: 2.2rem;
   }
   p {
     font-size: 14px;
   }
+  h2 {
+font-size: 28px;
+
+  }
+  h4 {
+    font-size: 18;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  h6 {
+    font-size: 12px;
+  }
+  .HeroSection {
+    padding: 1rem 0;
+  }
+
+ 
   .spend-title {
     font-size: 12px;
   }

@@ -60,6 +60,23 @@
 
 }
 
+/* Animation */
+
+@keyframes textSlide {
+
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+
+}
+  /* =================================
+   Global End    
+   ================================ */
+
 /* =================================
    MAIN SECTION
 ================================= */
@@ -71,9 +88,7 @@
 }
 
 
-/* =================================
-   LEFT SIDE
-================================= */
+
 
 .left-design {
   position: relative;
@@ -81,9 +96,7 @@
 }
 
 
-/* =================================
-   MAIN IMAGE
-================================= */
+
 
 .main-image-wrapper {
   position: absolute;
@@ -101,11 +114,6 @@
   object-fit: cover;
   display: block;
 }
-
-
-/* =================================
-   RED SPEND CARD
-================================= */
 
 .spend-card {
   position: absolute;
@@ -129,8 +137,6 @@
 }
 
 
-/* Spend text */
-
 .spend-title {
   color: white;
 
@@ -143,9 +149,7 @@
 }
 
 
-/* =================================
-   CHART
-================================= */
+
 
 .chart-area {
   flex: 1;
@@ -193,14 +197,12 @@
 }
 
 
-/* December bar */
 
 .active-bar {
   background: #27002f;
 }
 
 
-/* Amount */
 
 .amount {
   position: absolute;
@@ -219,7 +221,6 @@
 }
 
 
-/* Month */
 
 .month {
   color: white;
@@ -230,9 +231,7 @@
 }
 
 
-/* =================================
-   RIGHT SIDE
-================================= */
+
 
 .right-design {
   position: relative;
@@ -241,9 +240,7 @@
 }
 
 
-/* =================================
-   TOP IMAGE
-================================= */
+
 
 .top-image-wrapper {
   position: absolute;
@@ -270,9 +267,7 @@
 }
 
 
-/* =================================
-   STATS CARD
-================================= */
+
 
 .stats-card {
   position: absolute;
@@ -305,9 +300,7 @@
 }
 
 
-/* =================================
-   STAT ITEM
-================================= */
+
 
 .stat-item h2 {
   margin: 0;
@@ -333,6 +326,73 @@
 .HeroSection .stats-card p {
   color: #fff;
 }
+/* =================================
+   MAIN SECTION End
+================================= */
+/* =================================
+   Slider Section
+================================= */
+.text-slider {
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+  padding: 20px 0;
+}
+
+
+
+.text-slider-track {
+  display: flex;
+  width: max-content;
+  animation: textSlide 25s linear infinite;
+}
+
+
+.text-slider-group {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+
+
+.slider-text {
+  font-family: "Rosario", sans-serif;
+
+  font-weight: 700;
+
+  font-size: 51.22px;
+
+  line-height: 100%;
+
+  letter-spacing: 0;
+
+  text-transform: capitalize;
+
+  white-space: nowrap;
+
+  margin-right: 80px;
+
+
+  color: transparent;
+
+  -webkit-text-stroke: 1.3px #DF3542;
+
+  background: linear-gradient(
+    90deg,
+    #3D154B,
+    #DF3542,
+    #FFD29C
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+
+
+
+
 
 /* =================================
    TABLET
@@ -399,6 +459,17 @@
     font-size: 11px;
 
   }
+
+  /* =================================
+   Slider Section
+================================= */
+.slider-text {
+
+  font-weight: 600;
+
+  font-size: 24.22px;
+
+}
 }
 
 
@@ -468,6 +539,21 @@
     width: 100%;
     border-radius: 0;
 
+  }
+
+  /* =================================
+   Slider Section
+================================= */
+.text-slider {
+    padding: 15px 0;
+  }
+
+  .slider-text {
+    font-size: 18px;
+
+    margin-right: 50px;
+
+    -webkit-text-stroke: 1px #DF3542;
   }
 
 }
