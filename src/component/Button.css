@@ -389,11 +389,82 @@
   background-clip: text;
 }
 
+/* ================================
+   speciality section
+================================= */
+/* Speciality Section */
+.SpecialitySection {
+  padding: 4rem 0;
+}
+.SpecialitySection figure, .SpecialitySection img  {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.SpecialitySection .service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+}
 
+.SpecialitySection .service-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 22px;
+}
 
+.SpecialitySection .service-list .number {
+  width: 18px !important;
+  height: 18px !important;
+  min-width: 18px !important;
 
+  background-color: #DF3542 !important;
+  color: #fff !important;
 
+  border-radius: 50% !important;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+.SpecialitySection .align-items-lg-start span {
+   background: linear-gradient(to right, #3D154B, #DF3542, #FFD29C);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.SpecialitySection .align-items-lg-start {
+  width: 74%;
+}
+.SpecialitySection .align-items-lg-start figure, .SpecialitySection .align-items-lg-start img {
+  width: 75%;
+  
+}
+.SpecialitySection .position-relative .position-absolute {
+  border-radius: 10px;
+  border: solid #4444441A;
+  top: 30%;
+  left: 50%;
+  width: 40%;
+
+}
+/* Responsiveness */
+@media only screen and (max-width:1400px){
+ ecialitySection .align-items-lg-start {
+  width: 88%;
+}
+}
+@media only screen and (max-width:1200px){
+ 
+  .SpecialitySection .align-items-lg-start {
+  width: 100%;
+}
+}
 /* =================================
    TABLET
 ================================= */
@@ -555,5 +626,20 @@
 
     -webkit-text-stroke: 1px #DF3542;
   }
+ /* =================================
+   Speciality Section
+================================= */
 
+.SpecialitySection .position-relative .position-absolute {
+    top: 25%;
+    left: 36%;
+    width: 65%;
+}
+
+
+}
+@media only screen and (max-width:480px){
+  .SpecialitySection .position-relative .position-absolute {
+    top: 15%;
+}
 }
