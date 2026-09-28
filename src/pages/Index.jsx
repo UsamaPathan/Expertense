@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import './Index.css'
 import Button2 from '../component/Button2'
-import Button3 from '../component/Button3'
 import Review1 from '../images/review_1.png'
 import Review2 from '../images/review_2.png'
 import Review3 from '../images/review_3.png'
 import Graph from '../component/Graph'
 import TextSlider from '../component/Slider'
 import Speciality from '../component/speciality'
+import Services from '../component/Services'
+import Button3 from '../component/Button3'
 
 const customerReviews = [
   {
@@ -59,7 +60,7 @@ function Index() {
               <div className="d-flex flex-column gap-3 align-items-start">
                 <div className="d-flex align-items-lg-center">
                   <h1>
-                    Elevate your Brand with expert<span> SEO & Digital Marketing</span>
+                    Elevate your Brand with expert<span className='span'> SEO & Digital Marketing</span>
                   </h1>
                 </div>
                 <div className="">
@@ -122,6 +123,9 @@ function Index() {
 
       {/*  Speciality Section*/}
       <Speciality/>
+      {/*Service  */}
+      <Services />
+
     </>
   )
 }
