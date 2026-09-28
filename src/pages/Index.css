@@ -52,7 +52,16 @@ letter-spacing: 0%;
 text-transform: capitalize;
 color: #DF3542;
 }
-
+p {
+  font-family: Rosario;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 0%;
+  text-transform: lowercase;
+  color: #444444;
+}
 
 /* global End */
 
@@ -70,16 +79,7 @@ color: #DF3542;
   background-clip: text;
 }
 
-.HeroSection p {
-  font-family: Rosario;
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 16px;
-  line-height: 1.7;
-  letter-spacing: 0%;
-  text-transform: lowercase;
-  color: #444444;
-}
+
 
 .review-strip {
   display: flex;

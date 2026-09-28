@@ -7,8 +7,11 @@ import '../pages/Index.css'
 function Speciality() {
   return (
     <>
+    
       {/*speciality Section  */}
       <section className="SpecialitySection">
+         {/* About Us Vertical Tab */}
+ 
         <div className="container">
           <div className="row">
             <div className="col-md-4 col-12">
@@ -43,8 +46,18 @@ function Speciality() {
               <Button2/>
             </div>
             <div className="col-md-8 col-12 ">
-              <div className="d-flex flex-column gap-3">
-                <div className='align-items-lg-start'><h2>Challenges in <span>Digital Technology</span> are Our Specialty</h2></div>
+              <div className="position-relative d-flex flex-column gap-3">
+                 <div className="about-us-tab">
+  <span className="about-line"></span>
+
+  <div className="about-text">
+    <span className="about-word">About</span>
+    <span className="us-word"> Us</span>
+  </div>
+
+  <div className="about-circle"></div>
+</div>
+                <div className='align-items-lg-start'><h2>Challenges in <span className='span'>Digital Technology</span> are Our Specialty</h2></div>
                 <div className="align-items-lg-start"><p>Lorem ipsum dolor sit amet consectetur. In nulla nunc arcu velit massa mauris molestie hac. Hac arcu amet nullam pellentesque. Urna eu  felis sodales sit non.Lorem ipsum dolor sit amet  In nulla nunc arcu velit massa mauris molestie hac. Hac arcu amet nullam pellentesque.</p></div>
                 <div className="position-relative">
                   <figure className='align-items-lg-start'><img src={speciality} alt="" /></figure>

@@ -59,7 +59,12 @@
   color: #fff;
 
 }
-
+.span {
+   background: linear-gradient(to right, #3D154B, #DF3542, #FFD29C);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
 /* Animation */
 
 @keyframes textSlide {
@@ -395,6 +400,7 @@
 /* Speciality Section */
 .SpecialitySection {
   padding: 4rem 0;
+  position: relative;
 }
 .SpecialitySection figure, .SpecialitySection img  {
   width: 100%;
@@ -432,12 +438,7 @@
   font-size: 11px;
   font-weight: 600;
 }
-.SpecialitySection .align-items-lg-start span {
-   background: linear-gradient(to right, #3D154B, #DF3542, #FFD29C);
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
+
 .SpecialitySection .align-items-lg-start {
   width: 74%;
 }
@@ -453,16 +454,318 @@
   width: 40%;
 
 }
+
+.SpecialitySection .about-us-tab {
+    position: absolute;
+    top: 11px;
+    right: 12px;
+    width: 295px;
+    height: 345px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 50;
+    gap: 10px;
+}
+
+
+.SpecialitySection .about-line {
+  display: block;
+
+  width: 2px;
+  height: 165px;
+
+  background-color: #30203a;
+
+  flex-shrink: 0;
+}
+
+
+.SpecialitySection .about-text {
+  position: relative;
+  z-index: 2;
+
+
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+
+ font-family: Rosario;
+font-weight: 500;
+font-style: Medium;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0%;
+text-transform: capitalize;
+
+
+  white-space: nowrap;
+}
+
+.SpecialitySection .about-word {
+  color: #27002f;
+}
+
+.SpecialitySection .us-word {
+  color: #ed917a;
+}
+
+.SpecialitySection .about-circle {
+  position: absolute;
+
+  width: 45px;
+  height: 45px;
+
+  left: 50%;
+  bottom: 79px;
+
+  transform: translateX(-50%);
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    145deg,
+    #f15b55 0%,
+    #e84b63 35%,
+    #7d184e 75%,
+    #24104a 100%
+  );
+
+  z-index: 1;
+}
+/* Services Section */
+.Services {
+  padding: 4rem 0;
+}
+.Services .service-us-tab {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.Services .service-line {
+  display: block;
+
+  width: 165px;
+  height: 2px;
+
+  background-color: #30203a;
+
+  flex-shrink: 0;
+}
+
+
+.Services .service-text {
+  z-index: 2;
+ font-family: Rosario;
+font-weight: 500;
+font-style: Medium;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0%;
+text-transform: capitalize;
+white-space: nowrap;
+margin-left: -35px;
+}
+
+.Services .service-word {
+  color: #27002f;
+}
+
+.Services .service-word {
+  color: #ed917a;
+}
+
+.Services .service-circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: linear-gradient(
+    145deg,
+    #f15b55 0%,
+    #e84b63 35%,
+    #7d184e 75%,
+    #24104a 100%
+  );
+
+  z-index: 1;
+}
+.Services .align-items-lg-start{
+  width: 50%;
+}
+
+.services-content {
+    margin-top: 50px;
+}
+
+
+.service-accordion {
+    width: 100%;
+}
+
+
+.service-item {
+    border-bottom: 1px solid #dddddd;
+}
+
+
+.service-item-header {
+    min-height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 12px 0;
+
+    cursor: pointer;
+}
+
+
+.service-item.active .service-item-header h4 {
+    color: #DF3542;
+}
+
+.service-arrow {
+    width: 26px;
+    height: 26px;
+
+    min-width: 16px;
+
+    border-radius: 50%;
+
+    background-color: #18001e;
+
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    line-height: 1;
+}
+
+
+.service-item.active .service-arrow {
+    background-color: #DF3542;
+    padding: 10px 10px;
+}
+
+
+
+
+.service-description {
+    padding: 0 25px 12px 0;
+}
+
+
+
+
+
+
+
+.service-right {
+    width: 100%;
+}
+
+
+.service-image {
+    width: 100%;
+
+    margin: 0;
+
+    overflow: hidden;
+}
+
+
+.service-image img {
+    width: 100%;
+
+    height: 220px;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+
+
+.service-red-box {
+    background-color: #DF3542;
+
+    border-radius: 0 0 10px 10px;
+
+    padding: 15px 20px;
+
+    color: #ffffff;
+}
+
+
+.service-red-box p {
+    margin: 0 0 5px;
+
+    font-family: "Rosario", sans-serif;
+
+    font-size: 11px;
+
+    line-height: 1.35;
+
+    color: #ffffff;
+}
+
+
+.service-red-box a {
+    color: #ffffff;
+
+    font-family: "Rosario", sans-serif;
+
+    font-size: 11px;
+
+    text-decoration: none;
+}
+
+
+.service-red-box a:hover {
+    text-decoration: underline;
+}
+.Services .hover4 {
+  display: none;
+}
+
+/* ================================
+   MOBILE
+================================ */
+
 /* Responsiveness */
 @media only screen and (max-width:1400px){
- ecialitySection .align-items-lg-start {
+ SpecialitySection .align-items-lg-start {
   width: 88%;
 }
+.SpecialitySection .about-us-tab {
+    right: -65px;
+  }
 }
 @media only screen and (max-width:1200px){
  
   .SpecialitySection .align-items-lg-start {
   width: 100%;
+}
+.SpecialitySection .about-us-tab {
+    right: -158px;
+  }
+
+  /* Services Section */
+  .Services .align-items-lg-start{
+  width: 49%;
+}
+.Services .service-line {
+  width: 116px;
 }
 }
 /* =================================
@@ -541,8 +844,28 @@
   font-size: 24.22px;
 
 }
+/* =================================
+   Speciality Section
+================================= */
+.SpecialitySection .about-line{
+    height: 75px;
+    
 }
-
+.SpecialitySection .about-us-tab {
+        right: -60px;
+        width: 53px;
+    }
+    .SpecialitySection .about-circle {
+      bottom: 165px;
+    }
+/* =================================
+   Services Section
+================================= */
+.Services .service-line {
+  width: 93px;
+}
+   
+}
 
 
 /* =================================
@@ -635,11 +958,43 @@
     left: 36%;
     width: 65%;
 }
+.SpecialitySection .about-us-tab {
+   display: none;
+  }
+  .SpecialitySection .col-md-8 .position-relative{
+    padding-top: 15px;
+  }
+  /* =================================
+   Services Section
+================================= */
+.Services .service-us-tab {
+  display: none;
+}
+.Services .align-items-lg-start {
+  width: 100%;
+}
+    .services-content {
+        margin-top: 30px;
+    }
 
+    .service-right {
+        margin-top: 30px;
+    }
 
+    .service-image img {
+        height: 250px;
+    }
+    .Services .hover2 {
+  display: none;
+}
+.Services .hover4 {
+  display: flex !important;
+  width: 100% !important;
+}
 }
 @media only screen and (max-width:480px){
   .SpecialitySection .position-relative .position-absolute {
     top: 15%;
 }
+
 }
