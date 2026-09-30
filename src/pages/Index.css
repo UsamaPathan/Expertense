@@ -1,8 +1,15 @@
 /* Global styling */
+@import url('https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300..700;1,300..700&display=swap');
+
 body {
-    margin: 0;
-    font-family: Rosario;
+     margin: 0;
+     font-family: Rosario;
+     font-weight: 400;
+     font-style: Regular;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
+
  h1 {
   font-family: Rosario;
   font-weight: 700;
@@ -168,10 +175,24 @@ p {
   letter-spacing: 0.15rem;
   line-height: 1;
 }
+/* Projects Section */
+.Projects{
+  padding: 4rem 0;
+} 
+.Projects .position-relative .position-absolute {
+  bottom: 10%;
+  left: 40%;
+}
+.Projects .arrow {
+  background: #DF3542;
+  width: 35px;
+  height: 35px;
+  border: #DF3542 solid 1px;
+  border-radius: 50%;
+}
 
 
-
-/* esponsiveness */
+/* Responsiveness */
 @media only screen and (max-width:1400px){
   .HeroSection h1 {
     font-size: 3.5rem;
@@ -189,6 +210,17 @@ p {
   }
   .SpecialitySection .align-items-lg-start {
   width: 100%;
+}
+/* Projects */
+.Projects .col-md-5 .gap-5 {
+  gap: 1rem !important;
+}
+.Projects .col-md-3 .mt-5 {
+  margin-top: 10px !important;
+  gap: 2rem !important;
+}
+.Projects .position-relative .position-absolute {
+    bottom: 5%;
 }
 }
 @media (max-width: 991.98px) {
@@ -269,11 +301,24 @@ font-size: 28px;
   .stars {
     font-size: 1.5rem;
   }
+
+  /* Projects */
+  .Projects {
+    padding: 2rem 0;
+  }
 }
 @media only screen and (max-width:768px) {
   .avatar-item, .plus-badge {
     right:14px
   }
+   /* Projects */
+  .Projects {
+    padding: 1rem 0;
+  }
+  .Projects .col-md-3 .mt-5 {
+    gap: 1rem !important;
+  }
+  
 }
 @media only screen and (max-width:576px) {
   .HeroSection {

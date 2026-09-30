@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import './Button.css';
-import Button2 from './Button2';
+import ReadMore from './ReadMore';
 import '../pages/Index.css';
 import service from '../images/service.jpg'
 
@@ -43,7 +43,6 @@ function Services() {
 
             <div className="container">
 
-                {/* TOP SECTION */}
 
                 <div className="d-flex gap-3 align-items-center justify-content-between flex-column flex-md-row">
 
@@ -74,16 +73,14 @@ function Services() {
                     </div>
 
 
-                    <Button2 className='hover2'/>
+                    <ReadMore />
 
                 </div>
 
 
-                {/* SERVICES CONTENT */}
 
                 <div className="row services-content">
 
-                    {/* LEFT SIDE */}
 
                     <div className="col-md-6 col-12">
 
@@ -99,7 +96,6 @@ function Services() {
                                     key={index}
                                 >
 
-                                    {/* HEADER */}
 
                                     <div
                                         className="service-item-header"
@@ -124,7 +120,6 @@ function Services() {
                                     </div>
 
 
-                                    {/* DESCRIPTION */}
 
                                     {activeService === index && (
 
@@ -147,7 +142,6 @@ function Services() {
                     </div>
 
 
-                    {/* RIGHT SIDE */}
 
                     <div className="col-md-6 col-12">
 
@@ -155,7 +149,6 @@ function Services() {
                              <div> <p>
                                     Lorem ipsum dolor sit amet consectetur. In nulla nunc arcu velit massa mauris molestie hac. Hac arcu amet nullam pellentesque. Urna eu  felisHac arcu amet nullam pellentesque. Urna eu  felis
                                 </p></div>
-                            {/* IMAGE */}
 
                             <figure className="service-image">
 
@@ -167,7 +160,6 @@ function Services() {
                             </figure>
 
 
-                            {/* RED BOX */}
 
                             <div className="service-red-box">
 
