@@ -1,11 +1,6 @@
-body {
-     margin: 0;
-     font-family: Rosario;
-     font-weight: 400;
-     font-style: Regular;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300..700;1,300..700&display=swap');
+
+
 .navbar-inner {
   display: flex;
   align-items: center;

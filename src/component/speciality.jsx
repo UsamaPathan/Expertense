@@ -1,7 +1,7 @@
 import React from 'react'
 import speciality from '../images/speciality.jpg'
 import seo from '../images/seo.jpg'
-import Button2 from './Button2'
+import ReadMore from './ReadMore'
 import './Button.css'
 import '../pages/Index.css'
 function Speciality() {
@@ -43,7 +43,7 @@ function Speciality() {
                   </ul>
                 </div>
               </div>
-              <Button2/>
+              <ReadMore/>
             </div>
             <div className="col-md-8 col-12 ">
               <div className="position-relative d-flex flex-column gap-3">

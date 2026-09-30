@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300..700;1,300..700&display=swap');
 .hover1 {
   background: linear-gradient(to right, #3D154B, #DF3542, #FFD29C);
   color: #fff;
@@ -307,26 +308,9 @@
 
 
 
-.stat-item h2 {
-  margin: 0;
-
-  font-size: 40px;
-
-  font-weight: 400;
-
-  line-height: 1;
-}
 
 
-.stat-item p {
-  margin: 10px 0 0;
 
-  font-size: 17px;
-
-  line-height: 1.2;
-
-  font-weight: 400;
-}
 
 .HeroSection .stats-card p {
   color: #fff;
@@ -536,7 +520,7 @@ text-transform: capitalize;
 .Services {
   padding: 4rem 0;
 }
-.Services .service-us-tab {
+.service-us-tab {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -544,7 +528,7 @@ text-transform: capitalize;
 }
 
 
-.Services .service-line {
+.service-line {
   display: block;
 
   width: 165px;
@@ -555,8 +539,7 @@ text-transform: capitalize;
   flex-shrink: 0;
 }
 
-
-.Services .service-text {
+.service-text {
   z-index: 2;
  font-family: Rosario;
 font-weight: 500;
@@ -569,15 +552,15 @@ white-space: nowrap;
 margin-left: -35px;
 }
 
-.Services .service-word {
+.service-word {
   color: #27002f;
 }
 
-.Services .service-word {
+.service-word {
   color: #ed917a;
 }
 
-.Services .service-circle {
+.service-circle {
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -699,7 +682,7 @@ margin-left: -35px;
 .service-red-box {
     background-color: #DF3542;
 
-    border-radius: 0 0 10px 10px;
+    border-radius: 15px 15px 15px 15px;
 
     padding: 15px 20px;
 
@@ -709,10 +692,6 @@ margin-left: -35px;
 
 .service-red-box p {
     margin: 0 0 5px;
-
-    font-family: "Rosario", sans-serif;
-
-    font-size: 11px;
 
     line-height: 1.35;
 
@@ -725,7 +704,7 @@ margin-left: -35px;
 
     font-family: "Rosario", sans-serif;
 
-    font-size: 11px;
+    font-size: 16px;
 
     text-decoration: none;
 }
@@ -737,7 +716,22 @@ margin-left: -35px;
 .Services .hover4 {
   display: none;
 }
-
+ /* =================================
+   Experience Section
+================================= */
+.Experience{
+  padding: 4rem 0;
+}
+.Experience .row .mb-0 {
+  padding: 60px 30px;
+}
+.Experience .row .mb-0 h4 {
+  color: #fff;
+}
+.Experience figure img {
+  object-fit: cover;
+  height: 600px;
+}
 /* ================================
    MOBILE
 ================================ */
@@ -864,6 +858,12 @@ margin-left: -35px;
 .Services .service-line {
   width: 93px;
 }
+ /* =================================
+   Experience Section
+================================= */
+.Experience{
+  padding: 2rem 0;
+}
    
 }
 
@@ -967,7 +967,7 @@ margin-left: -35px;
   /* =================================
    Services Section
 ================================= */
-.Services .service-us-tab {
+.service-us-tab {
   display: none;
 }
 .Services .align-items-lg-start {
@@ -991,6 +991,13 @@ margin-left: -35px;
   display: flex !important;
   width: 100% !important;
 }
+ /* =================================
+   Experience Section
+================================= */
+.Experience{
+  padding: 1rem 0;
+}
+
 }
 @media only screen and (max-width:480px){
   .SpecialitySection .position-relative .position-absolute {
