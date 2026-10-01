@@ -35,30 +35,27 @@
   border-radius: 3rem;
 }
 
-.hover2:hover {
-  background: #fff;
-  color: #000;
-
-}
-
-.hover3 {
-  font-family: Rosario;
-  font-weight: 600;
-  font-style: SemiBold;
-  font-size: 1rem;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-transform: capitalize;
-  padding: 1rem 3rem;
-  background: #fff;
-  color: #16001E;
-  border-radius: 3rem;
-}
-
-.hover3:hover {
-  background: #16001E;
+.hover2.dark {
+  background-color: #000;
   color: #fff;
+  border: 1px solid #000;
+}
+.hover2.dark:hover{
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
 
+
+.hover2.light {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+.hover2.light:hover{
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
 }
 .span {
    background: linear-gradient(to right, #3D154B, #DF3542, #FFD29C);
@@ -66,6 +63,48 @@
   -webkit-background-clip: text;
   background-clip: text;
 }
+
+.service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.service-list .number {
+  width: 18px !important;
+  height: 18px !important;
+  min-width: 18px !important;
+
+  background-color: #DF3542 !important;
+  color: #fff !important;
+
+  border-radius: 50% !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+.Card {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border:#44444433;
+  padding: 30px 15px;
+}
+.Card .line {
+  width: 100%;
+  height: 2px;
+  background: #44444433;
+  margin: 10px 0;
+}
+.Card .card {
+  padding: 20px 15px;
+  border-radius: 20px;
+  background: #f7d6d9;
+}
+
 /* Animation */
 
 @keyframes textSlide {
@@ -334,6 +373,7 @@
   display: flex;
   width: max-content;
   animation: textSlide 25s linear infinite;
+  gap: 30px;
 }
 
 
@@ -341,6 +381,7 @@
   display: flex;
   align-items: center;
   flex-shrink: 0;
+  gap: 80px;
 }
 
 
@@ -405,7 +446,7 @@
   margin-bottom: 22px;
 }
 
-.SpecialitySection .service-list .number {
+.service-list .number {
   width: 18px !important;
   height: 18px !important;
   min-width: 18px !important;
@@ -732,6 +773,47 @@ margin-left: -35px;
   object-fit: cover;
   height: 600px;
 }
+
+/* ================================
+   Pricing Section
+================================ */
+.Pricing {
+  padding: 4rem 0;
+}
+.Pricing .align-items-md-center h2 {
+  width: 59%;
+}
+/* ================================
+   blog Section
+================================ */
+.Blog {
+  padding: 4rem 0;
+}
+.Blog figure, .Blog img {
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+}
+.Blog figure, .Blog img {
+  height: 343px;
+}
+.Blog .SecondBlog, .Blog .SecondBlog img {
+  height: 252px;
+}
+.Blog a {
+  font-family: Rosario;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+text-transform: capitalize;
+background: linear-gradient(to right, #3D154B, #DF3542, #FFD29C);
+color: transparent !important;
+  -webkit-background-clip: text ;
+  background-clip: text;
+  text-decoration: none;
+}
 /* ================================
    MOBILE
 ================================ */
@@ -761,6 +843,10 @@ margin-left: -35px;
 .Services .service-line {
   width: 116px;
 }
+/*Experience Section */
+.Experience .row .mb-0 {
+    padding: 31px 30px;
+}
 }
 /* =================================
    TABLET
@@ -779,10 +865,13 @@ margin-left: -35px;
   .hover2 {
     padding: 0.5rem 1.5rem;
   }
-
-  .hover3 {
-    padding: 0.5rem 1.5rem;
+.service-list  {
+    padding: 0;
   }
+  .Card {
+    padding: 15px 10px;
+  }
+  
 
   .left-design {
     min-height: 500px;
@@ -841,6 +930,9 @@ margin-left: -35px;
 /* =================================
    Speciality Section
 ================================= */
+.SpecialitySection {
+  padding: 2rem 0;
+}
 .SpecialitySection .about-line{
     height: 75px;
     
@@ -855,6 +947,9 @@ margin-left: -35px;
 /* =================================
    Services Section
 ================================= */
+.Services {
+  padding: 2rem 0;
+}
 .Services .service-line {
   width: 93px;
 }
@@ -864,9 +959,25 @@ margin-left: -35px;
 .Experience{
   padding: 2rem 0;
 }
-   
+.Experience .row .mb-0 {
+    padding: 31px 10px;
 }
-
+  .Experience .flex-md-row {
+    gap: 10px !important;
+}
+ /* =================================
+   pricing Section
+================================= */
+.Pricing {
+  padding:2rem 0;
+}
+/* ================================
+   blog Section
+================================ */
+.Blog {
+  padding: 2rem 0;
+}
+}
 
 /* =================================
    MOBILE
@@ -952,6 +1063,10 @@ margin-left: -35px;
  /* =================================
    Speciality Section
 ================================= */
+SpecialitySection  {
+
+  padding: 1rem 0;
+}
 
 .SpecialitySection .position-relative .position-absolute {
     top: 25%;
@@ -967,6 +1082,9 @@ margin-left: -35px;
   /* =================================
    Services Section
 ================================= */
+.Services {
+  padding: 1rem 0;
+}
 .service-us-tab {
   display: none;
 }
@@ -997,7 +1115,21 @@ margin-left: -35px;
 .Experience{
   padding: 1rem 0;
 }
-
+ /* =================================
+  Pricing Section
+================================= */
+.Pricing {
+  padding: 1rem 0;
+}
+.Pricing .align-items-md-center h2 {
+  width: 100%;
+}
+/* ================================
+   blog Section
+================================ */
+.Blog {
+  padding: 1rem 0;
+}
 }
 @media only screen and (max-width:480px){
   .SpecialitySection .position-relative .position-absolute {

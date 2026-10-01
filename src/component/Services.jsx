@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import './Button.css';
-import ReadMore from './ReadMore';
+import './Component.css';
+import Button2 from './Button2';
 import '../pages/Index.css';
 import service from '../images/service.jpg'
 
@@ -73,7 +73,7 @@ function Services() {
                     </div>
 
 
-                    <ReadMore />
+                    <Button2 text="read More" />
 
                 </div>
 
@@ -90,8 +90,8 @@ function Services() {
 
                                 <div
                                     className={`service-item ${activeService === index
-                                            ? "active"
-                                            : ""
+                                        ? "active"
+                                        : ""
                                         }`}
                                     key={index}
                                 >
@@ -146,9 +146,9 @@ function Services() {
                     <div className="col-md-6 col-12">
 
                         <div className="service-right">
-                             <div> <p>
-                                    Lorem ipsum dolor sit amet consectetur. In nulla nunc arcu velit massa mauris molestie hac. Hac arcu amet nullam pellentesque. Urna eu  felisHac arcu amet nullam pellentesque. Urna eu  felis
-                                </p></div>
+                            <div> <p>
+                                Lorem ipsum dolor sit amet consectetur. In nulla nunc arcu velit massa mauris molestie hac. Hac arcu amet nullam pellentesque. Urna eu  felisHac arcu amet nullam pellentesque. Urna eu  felis
+                            </p></div>
 
                             <figure className="service-image">
 
@@ -158,7 +158,6 @@ function Services() {
                                 />
 
                             </figure>
-
 
 
                             <div className="service-red-box">

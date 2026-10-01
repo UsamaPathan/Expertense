@@ -1,9 +1,10 @@
 import React from 'react'
-import ReadMore from './ReadMore'
+import Button2 from './Button2'
 import experience from '../images/experience.jpg'
 import logoipsum from '../images/logoipsum.png'
 import logoipsum2 from '../images/logoipsum2.png'
 import logoipsum3 from '../images/logoipsum3.png'
+import TextSlider from './Slider'
 
 
 function Experience() {
@@ -39,7 +40,7 @@ function Experience() {
                         </div>
 
 
-                        <ReadMore />
+                        <Button2 text="ReadMore" />
 
                     </div>
                     <div className="row">
@@ -73,9 +74,14 @@ function Experience() {
                                        </div>
                                     </div>
                                    <div className="d-flex gap-3 align-items-center">
-                                    <figure className='w-100 h-100'><img src={logoipsum} alt="Silde1" className='w-75 h-100'/></figure>
-                                    <figure className='w-100 h-100'><img src={logoipsum2} alt="Sile2" className='w-75 h-100'/></figure>
-                                    <figure className='w-100 h-100'><img src={logoipsum3} alt="Slide3" className='w-75 h-100'/></figure>
+                                    <TextSlider
+                                      type="image"
+                                      items={[
+                                        logoipsum,
+                                        logoipsum2,
+                                        logoipsum3,
+                                        ]}
+                                      />
                                    </div>
                             </div>
                             </div>
