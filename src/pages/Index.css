@@ -235,7 +235,7 @@ font-size: 28px;
 
   }
   h4 {
-    font-size: 18;
+    font-size: 20px;
   }
   h5 {
     font-size: 18px;
@@ -243,6 +243,7 @@ font-size: 28px;
   h6 {
     font-size: 12px;
   }
+  
   .HeroSection {
     padding: 1rem 0;
   }

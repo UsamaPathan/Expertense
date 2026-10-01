@@ -19,13 +19,11 @@ function Navbar() {
         </div>
 
 
-        {/* Mobile Sidebar */}
         <div
           className="collapse navbar-collapse navbar-center"
           id="navbarNavDropdown"
         >
 
-          {/* Sidebar Header */}
           <div className="mobile-sidebar-header align-items-center">
 
             <a  href="#Index"
@@ -112,7 +110,7 @@ function Navbar() {
 
 
         <div className="navbar-right d-flex align-items-center">
-          <Button />
+          <Button text='Contact Us'/>
         </div>
 
 

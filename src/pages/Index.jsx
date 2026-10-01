@@ -8,13 +8,14 @@ import Graph from '../component/Graph'
 import TextSlider from '../component/Slider'
 import Speciality from '../component/speciality'
 import Services from '../component/Services'
-import Button3 from '../component/Button3'
+import Button from '../component/Button'
 import project from '../images/project.jpg'
 import project2 from '../images/project2.jpg'
 import right from '../images/right.png'
 import left from '../images/left.png'
-import ViewDetails from '../component/ViewDetails'
 import Experience from '../component/Experienced'
+import Pricing from '../component/Pricing'
+import Blog from '../component/Blog'
 
 
 const customerReviews = [
@@ -97,8 +98,8 @@ function Index() {
                   </p>
                 </div>
                 <div className="d-flex align-items-start gap-3">
-                  <Button2 />
-                  <Button3 />
+                  <Button2 text="Start Now" variant='dark'/>
+                  <Button2 text="Contact Us" variant="light"/>
                 </div>
                 <div className="review-strip">
                   <div className="avatar-stack" aria-label="Customer reviews">
@@ -143,7 +144,14 @@ function Index() {
       </section>
 
       {/* Text Slider Section */}
-      <TextSlider />
+      <TextSlider  
+  type="text"
+  items={[
+    "Marketing Solutions",
+    "Search Engine Optimization",
+    "Research & Analysis",
+    "SEO Strategy Development",
+  ]}/>
 
       {/*  Speciality Section*/}
       <Speciality />
@@ -224,7 +232,7 @@ function Index() {
               <div><h5>Real Experiences</h5></div>
               <div><p>Lorem ipsum dolor sit amet consectetur. In nulla nunc arcu amet</p></div>
             </div>
-            <ViewDetails/>
+            <Button text="View Details" />
           </div>
         </div>
           </div>
@@ -232,6 +240,10 @@ function Index() {
       </section>
       {/*Experience Section */}
       <Experience />
+      {/* Pricing Section */}
+      <Pricing />
+      {/* Blog Section */}
+      <Blog />
     </>
   )
 }

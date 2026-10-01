@@ -1,9 +1,9 @@
 import React from 'react'
-import './Button.css'
-function Button2() {
+import './Component.css'
+function Button2({text, variant='dark'}) {
   return (
     <>
-    <button className="hover2">start Now</button>
+    <button className={`hover2 ${variant}`}>{text}</button>
     </>
   )
 }
