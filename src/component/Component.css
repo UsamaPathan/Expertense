@@ -815,6 +815,62 @@ color: transparent !important;
   text-decoration: none;
 }
 /* ================================
+  PreFooter Section
+================================ */
+.Prefooter {
+  padding: 4rem 0;
+  border-top: 1px solid #44444433;
+  border-bottom: 1px solid #44444433;
+}
+.Prefooter .align-items-md-start {
+  width: 20%;
+}
+.Prefooter .align-items-md-center {
+  width: 60%;
+}
+.Prefooter .align-items-md-center .circle {
+    width: 75px;
+    height: 75px;
+    min-width: 75px;
+    background: #DF3542;
+    border-radius: 50%;
+}
+.Prefooter .align-items-md-center .circle .arrow {
+  font-size: 62px;
+  color: #fff;
+  font-weight: 900;
+  transform: rotateX(-45deg);
+}
+/* ================================
+   Footer Section
+================================ */
+.Footer{
+  padding: 4rem 0;
+  border-bottom: 1px solid #44444433;
+ 
+}
+.Footer a {
+  font-family: Rosario;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+text-transform: capitalize;
+text-decoration: none;
+color: #444444;
+
+}
+.Footer a:hover {
+  color: #DF3542;
+  text-decoration: underline;
+}
+.Footer .input-group .form-control {
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: 1px solid #44444433;
+}
+/* ================================
    MOBILE
 ================================ */
 
@@ -977,6 +1033,25 @@ color: transparent !important;
 .Blog {
   padding: 2rem 0;
 }
+/* ================================
+   preffoter Section
+================================ */
+.Prefooter {
+  padding: 2rem 0;
+}
+.Prefooter .align-items-md-start {
+  width: 40%;
+}
+.Prefooter .align-items-md-center {
+  width: 50%;
+}
+/* ================================
+   Footer Section
+================================ */
+.Footer{
+  padding: 2rem 0;
+ 
+}
 }
 
 /* =================================
@@ -1129,6 +1204,31 @@ SpecialitySection  {
 ================================ */
 .Blog {
   padding: 1rem 0;
+}
+/* ================================
+   preffoter Section
+================================ */
+.Prefooter {
+  padding: 1rem 0;
+}
+.Prefooter .align-items-md-start {
+  width: 100%;
+}
+.Prefooter .align-items-md-center {
+  width: 100%;
+}
+/* ================================
+   Footer Section
+================================ */
+.Footer{
+  padding: 1rem 0;
+ 
+}
+.Footer .service-us-tab {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }
 }
 @media only screen and (max-width:480px){

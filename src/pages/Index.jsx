@@ -16,6 +16,9 @@ import left from '../images/left.png'
 import Experience from '../component/Experienced'
 import Pricing from '../component/Pricing'
 import Blog from '../component/Blog'
+import PreFooter from '../component/PreFooter'
+import Footer from '../component/Footer'
+import CopyRight from '../component/CopyRight'
 
 
 const customerReviews = [
@@ -57,7 +60,7 @@ function Index() {
     const index = (reviewIndex + i) % customerReviews.length
     visibleReviews.push(customerReviews[index])
   }
- const [currentImage, setCurrentImage] = useState(0);
+  const [currentImage, setCurrentImage] = useState(0);
 
   const projects = [
     project,
@@ -98,8 +101,8 @@ function Index() {
                   </p>
                 </div>
                 <div className="d-flex align-items-start gap-3">
-                  <Button2 text="Start Now" variant='dark'/>
-                  <Button2 text="Contact Us" variant="light"/>
+                  <Button2 text="Start Now" variant='dark' />
+                  <Button2 text="Contact Us" variant="light" />
                 </div>
                 <div className="review-strip">
                   <div className="avatar-stack" aria-label="Customer reviews">
@@ -144,14 +147,14 @@ function Index() {
       </section>
 
       {/* Text Slider Section */}
-      <TextSlider  
-  type="text"
-  items={[
-    "Marketing Solutions",
-    "Search Engine Optimization",
-    "Research & Analysis",
-    "SEO Strategy Development",
-  ]}/>
+      <TextSlider
+        type="text"
+        items={[
+          "Marketing Solutions",
+          "Search Engine Optimization",
+          "Research & Analysis",
+          "SEO Strategy Development",
+        ]} />
 
       {/*  Speciality Section*/}
       <Speciality />
@@ -176,65 +179,65 @@ function Index() {
 
                 </div>
                 <div className=''><h2>Some of the Projects We <span className='span'>Have Completed</span></h2></div>
-                 <div><p>We turn ideas into impactful digital experiences through thoughtful design, modern technology, and creative solutions. Explore some of the projects we have successfully completed for businesses across different industries.</p></div>
+                <div><p>We turn ideas into impactful digital experiences through thoughtful design, modern technology, and creative solutions. Explore some of the projects we have successfully completed for businesses across different industries.</p></div>
               </div>
             </div>
             <div className="col-md-4 col-12">
 
-        <figure className="w-100 h-100 position-relative mb-0">
+              <figure className="w-100 h-100 position-relative mb-0">
 
-          <img
-            src={projects[currentImage]}
-            alt="Our Projects"
-            className="w-100 project-slider-image h-100"
-          />
-
-          <div className="d-flex gap-1 position-absolute project-arrows">
-
-            <div
-              className="arrow d-flex align-items-center justify-content-center"
-              onClick={previousImage}
-            >
-              <figure className="mb-0">
                 <img
-                  src={left}
-                  alt="Previous"
+                  src={projects[currentImage]}
+                  alt="Our Projects"
                   className="w-100 project-slider-image h-100"
                 />
+
+                <div className="d-flex gap-1 position-absolute project-arrows">
+
+                  <div
+                    className="arrow d-flex align-items-center justify-content-center"
+                    onClick={previousImage}
+                  >
+                    <figure className="mb-0">
+                      <img
+                        src={left}
+                        alt="Previous"
+                        className="w-100 project-slider-image h-100"
+                      />
+                    </figure>
+                  </div>
+
+
+                  <div
+                    className="arrow d-flex align-items-center justify-content-center"
+                    onClick={nextImage}
+                  >
+                    <figure className="mb-0">
+                      <img
+                        src={right}
+                        alt="Next"
+                      />
+                    </figure>
+                  </div>
+
+                </div>
+
               </figure>
+
             </div>
-
-
-            <div
-              className="arrow d-flex align-items-center justify-content-center"
-              onClick={nextImage}
-            >
-              <figure className="mb-0">
-                <img
-                  src={right}
-                  alt="Next"
-                />
-              </figure>
+            <div className="col-md-3 col-12">
+              <div className="d-flex flex-column gap-5 mt-5">
+                <div className="d-flex flex-column gap-1">
+                  <div><h5>Quality Assurance</h5></div>
+                  <div><p>Lorem ipsum dolor sit amet consectetur. In nulla nunc arcu amet</p></div>
+                </div>
+                <div className="d-flex flex-column gap-1">
+                  <div><h5>Real Experiences</h5></div>
+                  <div><p>Lorem ipsum dolor sit amet consectetur. In nulla nunc arcu amet</p></div>
+                </div>
+                <Button text="View Details" />
+              </div>
             </div>
-
-          </div>
-
-        </figure>
-
-      </div>
-        <div className="col-md-3 col-12">
-          <div className="d-flex flex-column gap-5 mt-5">
-            <div className="d-flex flex-column gap-1">
-              <div><h5>Quality Assurance</h5></div>
-              <div><p>Lorem ipsum dolor sit amet consectetur. In nulla nunc arcu amet</p></div>
-            </div>
-            <div className="d-flex flex-column gap-1">
-              <div><h5>Real Experiences</h5></div>
-              <div><p>Lorem ipsum dolor sit amet consectetur. In nulla nunc arcu amet</p></div>
-            </div>
-            <Button text="View Details" />
-          </div>
-        </div>
           </div>
         </div>
       </section>
@@ -244,6 +247,12 @@ function Index() {
       <Pricing />
       {/* Blog Section */}
       <Blog />
+      {/* PreFooter Section */}
+      <PreFooter />
+      {/* Footer Section */}
+      <Footer />
+      {/* CopyRight Section */}
+      <CopyRight />
     </>
   )
 }
