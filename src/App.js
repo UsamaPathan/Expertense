@@ -4,7 +4,7 @@ import Navbar from "./component/Navbar";
 
 import Index from "./pages/Index.jsx";
 import About from "./pages/About.jsx";
-
+import Service from ".//pages/Servics.jsx"
 import {
   createBrowserRouter,
   RouterProvider
@@ -29,6 +29,16 @@ const router = createBrowserRouter([
       <>
         <Navbar />
         <About />
+      </>
+    ),
+  },
+
+   {
+    path: "/service",
+    element: (
+      <>
+        <Navbar />
+        <Service/>
       </>
     ),
   },
