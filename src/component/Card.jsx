@@ -17,19 +17,19 @@ function Card({h4, h2, h5, disc, disc2, disc3}){
                 <div className="line"></div>
                 <Button2 text="Get Started" variant='dark'/>
                 <div className="d-flex flex-column gap-3 mt-2">
-                  <ul class="service-list">
+                  <ul className="service-list">
                     <li className='d-flex gap-3 align-content-center'>
-                      <span class="number">1</span>
+                      <span className="number">1</span>
                       <h5>{disc}</h5>
                     </li>
 
                     <li className='d-flex gap-3 align-content-center'>
-                      <span class="number">2</span>
+                      <span className="number">2</span>
                       <h5>{disc2}</h5>
                     </li>
 
                     <li className='d-flex gap-3 align-content-center'>
-                      <span class="number">3</span>
+                      <span className="number">3</span>
                       <h5>{disc3}</h5>
                     </li>
 

@@ -46,12 +46,23 @@ text-transform: capitalize;
 
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
-background: linear-gradient(to right, #3D154B, #DF3542, #FFD29C);
-color: transparent;
--webkit-background-clip: text;
-background-clip: text;
-}
+    background: linear-gradient(
+        to right,
+        #3D154B,
+        #DF3542,
+        #FFD29C
+    );
 
+    color: transparent;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+@media (max-width: 768px) {
+    .navbar-expand-md .navbar-toggler {
+        display: block;
+    }
+}
 @media (max-width: 768px) {
 
   .navbar-inner {
