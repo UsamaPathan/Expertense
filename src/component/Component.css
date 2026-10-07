@@ -871,6 +871,20 @@ color: #444444;
   border: 1px solid #44444433;
 }
 /* ================================
+   heroBanner Section
+================================ */
+.HeroBanner {
+    padding: 2rem 0;
+
+}
+.HeroBanner .justify-content-center {
+ background: #16001E;
+ color: white;
+ padding: 3rem 0;
+ border: #000;
+ border-radius: 10px ;
+} 
+/* ================================
    MOBILE
 ================================ */
 
@@ -1051,6 +1065,13 @@ color: #444444;
 .Footer{
   padding: 2rem 0;
  
+}
+/* ================================
+   heroBanner Section
+================================ */
+.HeroBanner {
+    padding: 1rem 0;
+
 }
 }
 

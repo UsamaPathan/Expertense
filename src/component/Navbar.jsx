@@ -1,43 +1,49 @@
-import React from 'react';
-import Logo from '../images/logo.png';
-import Button from './Button';
-import './Navbar.css';
+import React, { useState } from "react";
+import Logo from "../images/logo.png";
+import Button from "./Button";
+
+import "./Navbar.css";
+
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <nav className="navbar navbar-expand-md bg-body-tertiary py-3">
 
       <div className="container-fluid navbar-inner">
 
+        {/* LOGO */}
         <div className="navbar-left">
-
-          <a className="navbar-brand me-3" href="#Index">
+          <NavLink className="navbar-brand me-3" to="/">
             <img src={Logo} alt="Expertense" />
-          </a>
-
+          </NavLink>
         </div>
 
 
+        {/* NAVIGATION */}
         <div
-          className="collapse navbar-collapse navbar-center"
+          className={`navbar-collapse navbar-center ${menuOpen ? "show" : "collapse"
+            }`}
           id="navbarNavDropdown"
         >
 
+          {/* Mobile Header */}
           <div className="mobile-sidebar-header align-items-center">
 
-            <a  href="#Index"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDropdown"
-                className="d-block d-md-none">
+            <NavLink
+              to="/"
+              onClick={() => setMenuOpen(false)}
+              className="d-block d-md-none"
+            >
               <img src={Logo} alt="Expertense" />
-            </a>
+            </NavLink>
 
             <button
               className="mobile-close d-block d-md-none"
               type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavDropdown"
+              onClick={() => setMenuOpen(false)}
               aria-label="Close menu"
             >
               ×
@@ -46,62 +52,70 @@ function Navbar() {
           </div>
 
 
+          {/* LINKS */}
           <ul className="navbar-nav mx-auto align-items-center">
 
+            {/* HOME */}
             <li className="nav-item">
-              <a
-                className="nav-link active"
-                aria-current="page"
-                href="#Index"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDropdown"
+              <NavLink
+                className="nav-link"
+                to="/"
+                onClick={() => setMenuOpen(false)}
+
               >
                 Home
-              </a>
+              </NavLink>
             </li>
 
+
+            {/* ABOUT */}
             <li className="nav-item">
-              <a
+              <NavLink
                 className="nav-link"
-                href="#About"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDropdown"
+                to="/about"
+                onClick={() => setMenuOpen(false)}
               >
                 About
-              </a>
+              </NavLink>
             </li>
 
+
+            {/* SERVICE */}
             <li className="nav-item">
-              <a
+              <NavLink
                 className="nav-link"
-                href="#service"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDropdown"
+                to="/service"
+                onClick={() => setMenuOpen(false)}
+
               >
                 Service
-              </a>
+              </NavLink>
             </li>
 
+
+            {/* BLOG */}
             <li className="nav-item">
-              <a
+              <NavLink
                 className="nav-link"
-                href="#Blog"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDropdown"
+                to="/blog"
+                onClick={() => setMenuOpen(false)}
+
               >
                 Blog
-              </a>
+              </NavLink>
             </li>
 
+
+            {/* PROJECTS */}
             <li className="nav-item">
-              <a
+              <NavLink
                 className="nav-link"
-                href="#Projects"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDropdown"
+                to="/projects"
+                onClick={() => setMenuOpen(false)}
+
               >
                 Projects
-              </a>
+              </NavLink>
             </li>
 
           </ul>
@@ -109,23 +123,21 @@ function Navbar() {
         </div>
 
 
+        {/* RIGHT BUTTON */}
         <div className="navbar-right d-flex align-items-center">
-          <Button text='Contact Us'/>
+          <Button text="Contact Us" />
         </div>
 
 
+        {/* MOBILE TOGGLE */}
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-expanded={menuOpen}
           aria-label="Toggle navigation"
         >
-
           <span className="navbar-toggler-icon"></span>
-
         </button>
 
       </div>

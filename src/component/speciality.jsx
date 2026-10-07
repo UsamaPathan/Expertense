@@ -20,24 +20,24 @@ function Speciality() {
                   <img src={seo} alt="Speciality 1" />
                 </figure>
                 <div className="d-flex flex-column gap-3">
-                  <ul class="service-list">
+                  <ul className="service-list">
                     <li className='d-flex gap-3 align-content-center'>
-                      <span class="number">1</span>
+                      <span className="number">1</span>
                       <h5>Negative Keyword Pruning</h5>
                     </li>
 
                     <li className='d-flex gap-3 align-content-center'>
-                      <span class="number">2</span>
+                      <span className="number">2</span>
                       <h5>Ad Copy Optimization</h5>
                     </li>
 
                     <li className='d-flex gap-3 align-content-center'>
-                      <span class="number">3</span>
+                      <span className="number">3</span>
                       <h5>Keyword And Competitor Research</h5>
                     </li>
 
                     <li className='d-flex gap-3 align-content-center'>
-                      <span class="number">4</span>
+                      <span className="number">4</span>
                       <h5>SKAGS (Single Keyword Ad Groups)</h5>
                     </li>
                   </ul>
