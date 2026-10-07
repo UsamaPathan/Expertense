@@ -885,6 +885,146 @@ color: #444444;
  border-radius: 10px ;
 } 
 /* ================================
+   MarketingApproach Section
+================================ */
+.MarketingApproach {
+  padding: 4rem 0;
+}
+
+.MarketingApproach .approach-top {
+    margin-bottom: 45px;
+}
+
+.MarketingApproach .approach-title {
+    margin: 0;
+    font-family: "Rosario", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.15;
+    color: #18001e;
+}
+
+.MarketingApproach .approach-title .span {
+    display: block;
+
+    color: #DF3542;
+
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+
+
+.MarketingApproach .approach-bottom {
+    align-items: stretch;
+}
+
+.MarketingApproach .process-tab {
+    width: 45px;
+    height: 100%;
+    min-height: 220px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MarketingApproach .process-line {
+    position: absolute;
+
+    top: -20px;
+    left: 51%;
+
+    width: 1px;
+    height: 70px;
+
+    background: #30203a;
+
+    transform: translateX(-50%);
+}
+
+.MarketingApproach .process-text h5 {
+    position: absolute;
+
+    left: 50%;
+    bottom: 80px;
+
+    transform: translateX(-50%) rotate(-90deg);
+
+    transform-origin: center;
+
+    white-space: nowrap;
+
+    color: #DF3542 !important;
+
+    z-index: 2;
+}
+
+.MarketingApproach .process-circle {
+    position: absolute;
+
+    bottom: 0;
+    left: 50%;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        145deg,
+        #f15b55 0%,
+        #e84b63 35%,
+        #7d184e 75%,
+        #24104a 100%
+    );
+
+    transform: translateX(-50%);
+}
+
+.MarketingApproach .approach-card {
+    min-height: 200px;
+
+    padding: 42px 25px;
+
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+
+    background: #fff;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease,
+        border-color 0.3s ease;
+
+    cursor: pointer;
+}
+
+
+.MarketingApproach .approach-card:hover {
+    background: linear-gradient(
+        135deg,
+        #3D154B 0%,
+        #DF3542 55%,
+        #FFD29C 100%
+    );
+
+    border-color: transparent;
+}
+
+.MarketingApproach .approach-card:hover h4 {
+    color: #fff;
+}
+
+.MarketingApproach .approach-card:hover p {
+    color: #fff;
+}
+
+/* ================================
    MOBILE
 ================================ */
 
@@ -916,6 +1056,16 @@ color: #444444;
 /*Experience Section */
 .Experience .row .mb-0 {
     padding: 31px 30px;
+}
+/*MarketingApproach Section */
+.MarketingApproach .process-line {
+  height: 110PX;
+}
+.MarketingApproach .process-text h5 {
+  bottom: 110px;
+}
+.MarketingApproach .process-circle{
+  bottom: 30px;
 }
 }
 /* =================================
@@ -1073,12 +1223,27 @@ color: #444444;
     padding: 1rem 0;
 
 }
+/* ================================
+   MarketingApproach Section
+================================ */
+.MarketingApproach {
+  padding: 2rem 0;
+}
+
+   .MarketingApproach .approach-card {
+        min-height: 190px;
+        padding: 35px 22px;
+    }
 }
 
 /* =================================
    MOBILE
 ================================= */
-
+@media only screen and (max-width:768px){
+   .MarketingApproach .process-tab {
+    display: none;
+    }
+}
 
 @media (max-width: 767px) {
 
@@ -1251,6 +1416,31 @@ SpecialitySection  {
   align-items: center;
   gap: 10px;
 }
+/* ================================
+   HeroBanner Section
+================================ */
+.HeroBanner {
+  padding: 0.5rem 0;
+}
+
+/* ================================
+   MarketingApproach Section
+================================ */
+
+.MarketingApproach  {
+        padding: 1rem 0;
+    }
+
+
+
+   .MarketingApproach .approach-bottom {
+        align-items: flex-start;
+    }
+
+
+   .MarketingApproach .approach-card {
+        min-height: auto;
+    }
 }
 @media only screen and (max-width:480px){
   .SpecialitySection .position-relative .position-absolute {
