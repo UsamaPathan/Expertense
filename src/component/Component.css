@@ -1023,10 +1023,106 @@ color: #444444;
 .MarketingApproach .approach-card:hover p {
     color: #fff;
 }
-
 /* ================================
-   MOBILE
+   Faq Section
 ================================ */
+/* =========================================
+   FAQ SECTION
+========================================= */
+
+.Faq {
+    padding: 4rem 0;
+}
+
+
+
+.Faq .faq-list {
+    width: 100%;
+}
+
+.Faq .faq-item {
+    width: 100%;
+    border-bottom: 1px solid #D9D9D9;
+
+    transition: all 0.3s ease;
+}
+
+
+.Faq .faq-question {
+    min-height: 62px;
+
+    padding: 12px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+
+    background: #fff;
+
+    transition: all 0.3s ease;
+}
+
+
+.Faq .faq-arrow {
+    width: 25px;
+    height: 25px;
+    min-width: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #18001e;
+    color: #fff;
+
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
+
+    transition: all 0.3s ease;
+}
+
+
+.Faq .faq-item.active .faq-question {
+    padding: 15px 18px;
+
+    background: #18001e;
+}
+
+
+.Faq .faq-item.active .faq-question h4 {
+    color: #fff;
+}
+.Faq .faq-item.active .faq-arrow {
+    background: #DF3542;
+    color: #fff;
+}
+
+.Faq .faq-answer {
+    padding: 15px 18px 18px;
+    border: 0.5px solid #444444;
+    border-radius: 5px;
+}
+.Faq .faq-image-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.Faq .faq-image {
+    width: 100%;
+    height: 450px;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 5px;
+}
 
 /* Responsiveness */
 @media only screen and (max-width:1400px){
@@ -1234,6 +1330,16 @@ color: #444444;
         min-height: 190px;
         padding: 35px 22px;
     }
+/* =================================
+FAQ Section
+================================= */
+    .Faq {
+      padding:2rem 0 ;
+    }
+    .Faq .faq-image-wrapper {
+        margin: 20px 0;
+    }
+
 }
 
 /* =================================
@@ -1272,7 +1378,7 @@ color: #444444;
 
     border-radius: 0 0 20px 20px;
   }
-  .col-md-7 {
+  .expertise-section .col-md-7 {
   height:138px;
  }
   .main-image-wrapper {
@@ -1403,6 +1509,14 @@ SpecialitySection  {
 .Prefooter .align-items-md-center {
   width: 100%;
 }
+.Prefooter .align-items-md-center .circle {
+  width: 50px ;
+  height: 50px;
+  margin-left: 10px;
+}
+.Prefooter .align-items-md-center .circle .arrow {
+  font-size: 50px;
+}
 /* ================================
    Footer Section
 ================================ */
@@ -1441,6 +1555,17 @@ SpecialitySection  {
    .MarketingApproach .approach-card {
         min-height: auto;
     }
+/* =================================
+   FAQ Section
+================================= */
+.Faq {
+  padding: 1rem 0;
+}
+
+     .Faq .faq-image-wrapper {
+        margin-top: 15px;
+    }
+
 }
 @media only screen and (max-width:480px){
   .SpecialitySection .position-relative .position-absolute {

@@ -6,6 +6,9 @@ import Footer from '../component/Footer'
 import CopyRight from '../component/CopyRight'
 import HeroBanner from '../component/HeroBanner'
 import MarketingApproach from "../component/MarketingApproach";
+import FAQ from '../component/FAQ'
+import '../component/Component.css'
+import faq from '../images/faq.jpg'
 
 function About() {
   return (
@@ -38,6 +41,8 @@ function About() {
     ]}
     />
     <Experience />
+
+    <FAQ image={faq}/>
     <PreFooter/>
     <Footer/>
     <CopyRight/>
