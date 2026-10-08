@@ -4,6 +4,7 @@ import '../pages/Index.css'
 import phone from '../images/phone.png'
 import email from '../images/email.png'
 import Button2 from './Button2'
+import { NavLink } from "react-router-dom";
 function Footer() {
     return (
         <>
@@ -13,10 +14,10 @@ function Footer() {
                         <div className="col-md-3 col-6">
                             <div className="d-flex flex-column gap-4">
                                 <h5>About Us</h5>
-                                <a href="#">About Us</a>
-                                <a href="#">Services</a>
-                                <a href="#">Marketing</a>
-                                <a href="#">Testimonials</a>
+                                <NavLink to="/about">About Us</NavLink>
+                                <NavLink to="/service">Services</NavLink>
+                                <NavLink to="/service">Marketing</NavLink>
+                                <NavLink to="/team">Testimonials</NavLink>
 
                             </div>
 
@@ -25,10 +26,10 @@ function Footer() {
                         <div className="col-md-3 col-6">
                             <div className="d-flex flex-column gap-4">
                                 <h5>Quick Links</h5>
-                                <a href="#">Keyword research</a>
-                                <a href="#">Social Media Marketing</a>
-                                <a href="#">Content Marketing</a>
-                                <a href="#">Content Marketing</a>
+                                <NavLink to="#">Keyword research</NavLink>
+                                <NavLink to="#">Social Media Marketing</NavLink>
+                                <NavLink to="#">Content Marketing</NavLink>
+                                <NavLink to="#">Content Marketing</NavLink>
                             </div>
                         </div>
                         <div className="col-md-3 col-12">
