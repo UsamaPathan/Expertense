@@ -4,11 +4,12 @@ import Navbar from "./component/Navbar";
 
 import Index from "./pages/Index.jsx";
 import About from "./pages/About.jsx";
-import Service from ".//pages/Servics.jsx"
+import Service from "./pages/Service.jsx"
 import {
   createBrowserRouter,
   RouterProvider
 } from "react-router-dom";
+import Projects from "./pages/Projects.jsx";
 
 
 const router = createBrowserRouter([
@@ -41,6 +42,15 @@ const router = createBrowserRouter([
         <Service/>
       </>
     ),
+  },
+  {
+    path: "/projects",
+    element: (
+      <>
+      <Navbar />
+      <Projects/>
+      </>
+    )
   },
 
 ]);
