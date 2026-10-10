@@ -1123,6 +1123,124 @@ color: #444444;
 
     border-radius: 5px;
 }
+/* =================================
+   OurTeam Section
+================================= */
+
+/* ===== MAIN SECTION ===== */
+
+.OurTeam {
+  position: relative;
+  padding: 4rem 0;
+}
+.OurTeam p {
+  color: #fff;
+}
+.OurTeam .team-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 475px;
+  background: #18001e;
+  border-radius: 12px;
+  z-index: 0;
+}
+
+
+.OurTeam .team-container {
+  position: relative;
+  z-index: 1;
+}
+
+.team-heading {
+  max-width: 500px;
+  margin: 0 auto 35px;
+  text-align: center;
+  color: #fff;
+}
+
+
+.OurTeam .team-row {
+  row-gap: 35px;
+}
+
+.OurTeam .team-card {
+  height: 100%;
+  text-align: center;
+}
+
+.OurTeam .team-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.OurTeam .team-image {
+  display: block;
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 5px;
+}
+
+.OurTeam .team-socials {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  padding: 9px 15px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.OurTeam .team-socials a {
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #DF3542;
+  border-radius: 50%;
+
+ background:
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(to right, #3D154B, #DF3542, #FFD29C) border-box;
+
+  color: #DF3542;
+  font-size: 12px;
+  text-decoration: none;
+
+  transition: all 0.25s ease;
+}
+
+.OurTeam .team-socials a:hover {
+  background: linear-gradient(
+    to right,
+    #3D154B,
+    #DF3542,
+    #FFD29C
+  );
+
+  color: #fff;
+  border-color: transparent;
+}
+
+.OurTeam .team-info {
+  padding-top: 24px;
+  text-align: center;
+}
 
 /* Responsiveness */
 @media only screen and (max-width:1400px){
@@ -1340,6 +1458,23 @@ FAQ Section
         margin: 20px 0;
     }
 
+/* =================================
+   OurTeam Section
+================================= */
+.OurTeam {
+  padding: 2rem 0;
+}
+ .OurTeam .team-background {
+    height: 250px;
+  }
+
+  .OurTeam .team-image-wrapper {
+    max-width: 260px;
+  }
+
+  .OurTeam .team-image {
+    height: 250px;
+  }
 }
 
 /* =================================
@@ -1566,10 +1701,51 @@ SpecialitySection  {
         margin-top: 15px;
     }
 
+    /* =================================
+   OurTeam Section
+================================= */
+.OurTeam {
+  padding: 1rem 0;
+}
+ .OurTeam .our-team-section {
+    padding: 35px 0 40px;
+  }
+
+  .OurTeam .team-background {
+    height: 300px;
+    border-radius: 10px;
+  }
+
+  .OurTeam .team-heading {
+    max-width: 380px;
+    padding: 0 12px;
+    margin-bottom: 30px;
+  }
+
+  .OurTeam .team-row {
+    row-gap: 35px;
+  }
+
+  .OurTeam .team-image-wrapper {
+    max-width: 280px;
+  }
+
+  .OurTeam .team-image {
+    height: 280px;
+  }
 }
 @media only screen and (max-width:480px){
   .SpecialitySection .position-relative .position-absolute {
     top: 15%;
 }
+   /* =================================
+   OurTeam Section
+================================= */
+.OurTeam .team-image-wrapper {
+    max-width: 245px;
+  }
 
+ .OurTeam .team-image {
+    height: 250px;
+  }
 }
