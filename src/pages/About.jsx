@@ -9,6 +9,7 @@ import MarketingApproach from "../component/MarketingApproach";
 import FAQ from '../component/FAQ'
 import '../component/Component.css'
 import faq from '../images/faq.jpg'
+import OurTeam from "../component/OurTeam";
 
 function About() {
   return (
@@ -41,6 +42,7 @@ function About() {
     ]}
     />
     <Experience />
+    <OurTeam />
 
     <FAQ image={faq}/>
     <PreFooter/>
