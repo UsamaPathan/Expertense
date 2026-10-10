@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Index.css'
 import Button2 from '../component/Button2'
-import Review1 from '../images/review_1.png'
-import Review2 from '../images/review_2.png'
-import Review3 from '../images/review_3.png'
+import customerReviews from "../data/customerReviews";
 import Graph from '../component/Graph'
 import TextSlider from '../component/Slider'
 import Speciality from '../component/speciality'
@@ -20,29 +18,6 @@ import PreFooter from '../component/PreFooter'
 import Footer from '../component/Footer'
 import CopyRight from '../component/CopyRight'
 
-
-const customerReviews = [
-  {
-    id: 1,
-    name: 'Sarah',
-    image: Review1,
-  },
-  {
-    id: 2,
-    name: 'Aisha',
-    image: Review2,
-  },
-  {
-    id: 3,
-    name: 'Daniel',
-    image: Review3,
-  },
-  {
-    id: 4,
-    name: 'Emma',
-    image: Review2,
-  },
-]
 
 function Index() {
   const [reviewIndex, setReviewIndex] = useState(0)
