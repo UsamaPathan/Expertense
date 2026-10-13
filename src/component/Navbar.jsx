@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../images/logo.png";
 import Button from "./Button";
-
+import "../pages/Index.css";
 import "./Navbar.css";
 
 import { NavLink } from "react-router-dom";

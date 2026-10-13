@@ -2,6 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Component.css";
+import "../pages/Index.css";
 import blogData from "../data/blogData";
 
 function Blog() {
@@ -20,7 +21,7 @@ function Blog() {
           <div className="col-md-6">
             <article className="Blog-featured">
               <Link
-                to={`/BlogDetails/${featuredBlog.id}`}
+                to={`/blog/${featuredBlog.id}`}
                 className="Blog-image-link"
               >
                 <figure className="Blog-featured-image">
@@ -34,10 +35,10 @@ function Blog() {
                   </div>
                 </figure>
               </Link>
-
+              <div className="d-flex flex-column gap-2">
               <h4>{featuredBlog.title}</h4>
               <p>{featuredBlog.excerpt}</p>
-
+               
               <div className="Blog-card-footer">
                 <div className="service-us-tab">
                   <div className="service-circle"></div>
@@ -48,9 +49,10 @@ function Blog() {
                   <span className="service-line"></span>
                 </div>
 
-                <Link to={`/BlogDetails/${featuredBlog.id}`}>
+                <Link to={`/blog/${featuredBlog.id}`}>
                   Read More ↗
                 </Link>
+              </div>
               </div>
             </article>
           </div>
@@ -61,7 +63,7 @@ function Blog() {
               {otherBlogs.map((item) => (
                 <article className="Blog-small-card" key={item.id}>
                   <Link
-                    to={`/BlogDetails/${item.id}`}
+                    to={`/blog/${item.id}`}
                     className="Blog-small-image"
                   >
                     <img src={item.image} alt={item.title} />
@@ -75,7 +77,7 @@ function Blog() {
                     <h4>{item.title}</h4>
                     <p>{item.excerpt}</p>
 
-                    <Link to={`/BlogDetails/${item.id}`}>
+                    <Link to={`/blog/${item.id}`}>
                       Read More ↗
                     </Link>
                   </div>

@@ -16,8 +16,8 @@ function Footer() {
                                 <h5>About Us</h5>
                                 <NavLink to="/about">About Us</NavLink>
                                 <NavLink to="/service">Services</NavLink>
-                                <NavLink to="/service">Marketing</NavLink>
-                                <NavLink to="/team">Testimonials</NavLink>
+                                <NavLink to="/projects">Marketing</NavLink>
+                                <NavLink to="/blog">Testimonials</NavLink>
 
                             </div>
 

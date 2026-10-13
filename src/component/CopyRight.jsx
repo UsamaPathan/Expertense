@@ -1,5 +1,6 @@
 import React from 'react'
-
+import "../pages/Index.css";
+import "./Component.css";
 function CopyRight() {
   return (
     <>

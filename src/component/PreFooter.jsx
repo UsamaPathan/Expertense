@@ -1,5 +1,6 @@
 import React from 'react'
 import './Component.css'
+import "../pages/Index.css";
 import logo from '../images/logo.png'
 function PreFooter() {
   return (

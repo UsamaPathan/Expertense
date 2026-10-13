@@ -1,5 +1,7 @@
 import React from 'react'
 import Card from './Card'
+import "../pages/Index.css";
+import "./Component.css";
 
 function Pricing() {
   return (

@@ -2,7 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Component.css";
-
+import "../pages/Index.css";
 import gallery1 from "../images/gallery1.jpg";
 import gallery2 from "../images/gallery2.jpg";
 import gallery3 from "../images/gallery3.jpg";

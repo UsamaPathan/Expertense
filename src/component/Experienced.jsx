@@ -6,6 +6,9 @@ import logoipsum from '../images/logoipsum.png'
 import logoipsum2 from '../images/logoipsum2.png'
 import logoipsum3 from '../images/logoipsum3.png'
 import TextSlider from './Slider'
+import "../pages/Index.css";
+import "./Component.css";
+
 
 
 function Experience() {

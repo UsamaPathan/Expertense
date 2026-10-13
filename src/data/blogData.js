@@ -6,7 +6,7 @@ import blog3 from "../images/blog3.jpg";
 const blogData = [
   {
     id: "technical-seo",
-    title: "The Role Of Technical SEO In Website Performance",
+    title: "Role Of Technical SEO",
     image: blog,
     category: "SEO & Optimization",
     date: "October 10, 2026",
@@ -29,7 +29,7 @@ const blogData = [
   },
   {
     id: "voice-search-seo",
-    title: "The Impact Of Voice Search On SEO",
+    title: "Impact Of Voice Search",
     image: blog2,
     category: "Search Engine Optimization",
     date: "October 12, 2026",
@@ -52,7 +52,7 @@ const blogData = [
   },
   {
     id: "data-driven-marketing",
-    title: "How Data-Driven Marketing Helps Businesses Grow",
+    title: "Data-Driven Marketing",
     image: blog3,
     category: "Digital Marketing",
     date: "October 13, 2026",

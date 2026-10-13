@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Button2 from "./Button2";
 import './Component.css'
+import "../pages/Index.css";
+
 function FAQ({ image }) {
   const [activeIndex, setActiveIndex] = useState(null);
 

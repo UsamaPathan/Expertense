@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Component.css";
+import "../pages/Index.css";
 import Hero_1 from '../images/hero_1.png'
 import Hero_2 from '../images/hero_2.png'
 function Graph() {

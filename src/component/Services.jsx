@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Component.css';
+import "../pages/Index.css";
 import Button2 from './Button2';
 import '../pages/Index.css';
 import service from '../images/service.jpg'

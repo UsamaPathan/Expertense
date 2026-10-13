@@ -9,11 +9,11 @@ import {
   createBrowserRouter,
   RouterProvider
 } from "react-router-dom";
-import Projects from "./pages/Projects.jsx";
+import Projects from "./pages/Projects";
 import ProjectDetails from "./pages/ProjectDetails";
 import Blogs from "./pages/Blog"
-import PricingPage from "./pages/PricingPage.jsx";
-import BlogDetails from "./pages/BlogDetails.jsx";
+import PricingPage from "./pages/PricingPage";
+import BlogDetails from "./pages/BlogDetails";
 
 
 
@@ -87,7 +87,7 @@ const router = createBrowserRouter([
   ),
 }, 
  {
-    path: "/BlogDetails",
+     path: "/blog/:blogId",
     element: (
       <>
         <Navbar />

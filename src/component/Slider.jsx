@@ -1,5 +1,6 @@
 import React from "react";
 import "./Component.css";
+import "../pages/Index.css";
 
 function TextSlider({ items, type = "text" }) {
   return (

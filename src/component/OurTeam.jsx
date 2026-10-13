@@ -7,6 +7,7 @@ import {
 import { FaXTwitter } from "react-icons/fa6";
 
 import "./Component.css";
+import "../pages/Index.css";
 
 import team1 from "../images/team1.jpg";
 import team2 from "../images/team2.jpg";

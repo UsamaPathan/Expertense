@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import customerReviews from "../data/customerReviews";
 import "./Component.css";
+import "../pages/Index.css";
 
 function Reviews() {
   const [reviewIndex, setReviewIndex] = useState(0);

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Component.css";
+import "../pages/Index.css";
 
 function MarketingApproach({
   title = "A Step By Step Guide To Our",
