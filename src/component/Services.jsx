@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 import './Component.css';
 import Button2 from './Button2';
 import '../pages/Index.css';
@@ -51,8 +51,8 @@ function Services() {
                         <div className="service-circle"></div>
 
                         <div className="service-text">
-                            <span className="service-word">About</span>
-                            <span className="service-word"> Us</span>
+                            <span className="about-word">Our</span>
+                            <span className="us-word"> Services</span>
                         </div>
 
                         <span className="service-line"></span>
@@ -72,9 +72,9 @@ function Services() {
 
                     </div>
 
-
+                   <Link to="/service">
                     <Button2 text="read More" />
-
+                   </Link>
                 </div>
 
 

@@ -4,6 +4,7 @@ import seo from '../images/seo.jpg'
 import Button2 from './Button2'
 import './Component.css'
 import '../pages/Index.css'
+import { Link } from 'react-router-dom'
 function Speciality() {
   return (
     <>
@@ -43,7 +44,9 @@ function Speciality() {
                   </ul>
                 </div>
               </div>
+              <Link to="/about">
               <Button2 text="Read More" />
+              </Link>
             </div>
             <div className="col-md-8 col-12 ">
               <div className="position-relative d-flex flex-column gap-3">

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 import './Index.css'
 import Button2 from '../component/Button2'
 import customerReviews from "../data/customerReviews";
@@ -210,7 +211,9 @@ function Index() {
                   <div><h5>Real Experiences</h5></div>
                   <div><p>Lorem ipsum dolor sit amet consectetur. In nulla nunc arcu amet</p></div>
                 </div>
+                <Link to="/Projects">
                 <Button text="View Details" />
+                </Link>
               </div>
             </div>
           </div>

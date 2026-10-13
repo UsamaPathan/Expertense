@@ -4,12 +4,13 @@ import PreFooter from '../component/PreFooter'
 import Footer from '../component/Footer'
 import CopyRight from '../component/CopyRight'
 import MarketingApproach from '../component/MarketingApproach'
+import Gallery from '../component/Gallery'
 
 function Projects() {
   return (
     <>
     <HeroBanner text="Our projects"/>
-    
+    <Gallery />
     <MarketingApproach 
       title="A Step By Step Guide To Our"
     highlight="Marketing Approach"

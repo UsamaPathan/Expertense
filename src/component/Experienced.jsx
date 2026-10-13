@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Button2 from './Button2'
 import experience from '../images/experience.jpg'
 import logoipsum from '../images/logoipsum.png'
@@ -39,9 +40,9 @@ function Experience() {
 
                         </div>
 
-
+                        <Link to ="/about">
                         <Button2 text="ReadMore" />
-
+                        </Link>
                     </div>
                     <div className="row">
                         

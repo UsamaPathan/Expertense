@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Component.css";
 import '../pages/Index.css';
 import Button2 from "./Button2";
@@ -15,7 +16,7 @@ function Card({h4, h2, h5, disc, disc2, disc3}){
                     <div><p>Lorem ipsum dolor sit amet consectetur. In nulla nunc arcu velit massa mauris molestie hac.</p></div>
                 </div>
                 <div className="line"></div>
-                <Button2 text="Get Started" variant='dark'/>
+               <Link to= "/PricingPage"><Button2 text="Get Started" variant='dark'/></Link>
                 <div className="d-flex flex-column gap-3 mt-2">
                   <ul className="service-list">
                     <li className='d-flex gap-3 align-content-center'>

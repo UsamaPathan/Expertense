@@ -10,6 +10,11 @@ import {
   RouterProvider
 } from "react-router-dom";
 import Projects from "./pages/Projects.jsx";
+import ProjectDetails from "./pages/ProjectDetails";
+import Blogs from "./pages/Blog"
+import PricingPage from "./pages/PricingPage.jsx";
+import BlogDetails from "./pages/BlogDetails.jsx";
+
 
 
 const router = createBrowserRouter([
@@ -52,6 +57,45 @@ const router = createBrowserRouter([
       </>
     )
   },
+  {
+  path: "/ProjectDetails",
+  element: (
+    <>
+      <Navbar />
+      <ProjectDetails />
+    </>
+  ),
+},
+  {
+  path: "/Blog",
+  element: (
+    <>
+      <Navbar />
+      <Blogs />
+      
+    </>
+  ),
+},
+ {
+  path: "/Pricingpage",
+  element: (
+    <>
+      <Navbar />
+      <PricingPage />
+      
+    </>
+  ),
+}, 
+ {
+    path: "/BlogDetails",
+    element: (
+      <>
+        <Navbar />
+        <BlogDetails />
+      </>
+    ),
+  },
+
 
 ]);
 
