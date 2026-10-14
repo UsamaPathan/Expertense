@@ -125,7 +125,10 @@ function Navbar() {
 
         {/* RIGHT BUTTON */}
         <div className="navbar-right d-flex align-items-center">
-          <Button text="Contact Us" />
+          <NavLink to='/contact'>         
+           <Button text="Contact Us" />
+           </NavLink>
+
         </div>
 
 

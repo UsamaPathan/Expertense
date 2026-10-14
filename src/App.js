@@ -14,7 +14,8 @@ import ProjectDetails from "./pages/ProjectDetails";
 import Blogs from "./pages/Blog"
 import PricingPage from "./pages/PricingPage";
 import BlogDetails from "./pages/BlogDetails";
-
+import ContactUs from "./pages/ContactUs";
+import ScrollToTop from "./component/ScrollToTop";
 
 
 const router = createBrowserRouter([
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
     path: "/",
     element: (
       <>
+      <ScrollToTop />
         <Navbar />
         <Index />
       </>
@@ -33,6 +35,8 @@ const router = createBrowserRouter([
     path: "/about",
     element: (
       <>
+      <ScrollToTop />
+
         <Navbar />
         <About />
       </>
@@ -43,6 +47,8 @@ const router = createBrowserRouter([
     path: "/service",
     element: (
       <>
+      <ScrollToTop />
+
         <Navbar />
         <Service/>
       </>
@@ -52,6 +58,8 @@ const router = createBrowserRouter([
     path: "/projects",
     element: (
       <>
+      <ScrollToTop />
+
       <Navbar />
       <Projects/>
       </>
@@ -61,6 +69,8 @@ const router = createBrowserRouter([
   path: "/ProjectDetails",
   element: (
     <>
+      <ScrollToTop />
+
       <Navbar />
       <ProjectDetails />
     </>
@@ -70,6 +80,8 @@ const router = createBrowserRouter([
   path: "/Blog",
   element: (
     <>
+      <ScrollToTop />
+
       <Navbar />
       <Blogs />
       
@@ -80,6 +92,8 @@ const router = createBrowserRouter([
   path: "/Pricingpage",
   element: (
     <>
+      <ScrollToTop />
+
       <Navbar />
       <PricingPage />
       
@@ -90,11 +104,27 @@ const router = createBrowserRouter([
      path: "/blog/:blogId",
     element: (
       <>
+      <ScrollToTop />
+
         <Navbar />
         <BlogDetails />
       </>
     ),
   },
+  {
+      path: "/contact",
+
+      element : (
+        <>
+      <ScrollToTop />
+
+        <Navbar />
+        <ContactUs />
+        </>
+      )
+      
+    
+  }
 
 
 ]);

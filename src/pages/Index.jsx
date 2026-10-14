@@ -77,8 +77,12 @@ function Index() {
                   </p>
                 </div>
                 <div className="d-flex align-items-start gap-3">
-                  <Button2 text="Start Now" variant='dark' />
+                  <Link to="/contact">
+                  <Button2 text="Start Now" variant="dark" />
+                  </Link>                  
+                  <Link to="/contact">
                   <Button2 text="Contact Us" variant="light" />
+                  </Link>
                 </div>
                 <div className="review-strip">
                   <div className="avatar-stack" aria-label="Customer reviews">
